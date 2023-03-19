@@ -1,0 +1,751 @@
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-family: helvetica, arial, sans-serif;
+    }
+
+    /*header*/
+    .header {
+        background-color: rgb(233, 164, 118);
+        width: 100%;
+        height: 100px;
+        display: flex;
+    }
+
+    .header img {
+        width: 110px;
+        height: 100px;
+        line-height: 100px;
+        margin-left: 40px;
+    }
+
+    .text-logo {
+        margin-right: 50px;
+        margin-left: 30;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 100%;
+        height: 100%;
+    }
+
+    .HTH {
+        font-size: 25px;
+        margin-bottom: -5px;
+        font-weight: 700;
+    }
+
+    .FUTSAL {
+        margin-left: -20px;
+        font-size: 20px;
+    }
+
+    .input {
+        width: 800px;
+        height: 100px;
+        line-height: 100px;
+    }
+
+    input {
+        width: 800px;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid #979595;
+    }
+
+    .ti-search {
+        margin-left: -32px;
+        cursor: pointer;
+        line-height: 100%;
+        height: 100%;
+        color: black;
+        font-weight: 800;
+    }
+
+    .ti-user {
+        margin-left: 70px;
+        line-height: 100px;
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 70px;
+        display: flex;
+        align-items: center;
+    }
+
+    .ti-shopping-cart {
+        line-height: 100px;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .accout {
+        background-color: #fff;
+        font-family: roboto condensed;
+        font-size: 14px;
+        box-shadow: 0 1px 1.5px rgb(0, 0, 0, 0.3);
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 103px;
+        width: 110px;
+        height: 80px;
+        z-index: 2;
+    }
+
+    .accout::before {
+        content: "";
+        display: block;
+        border-width: 5px 6px;
+        border-style: solid;
+        border-color: transparent transparent #c43127 transparent;
+        position: absolute;
+        top: -10px;
+        right: 50px;
+    }
+
+
+    .accout ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin-left: -20px;
+    }
+
+    .accout ul li {
+        width: 100%;
+        height: 40px;
+    }
+
+    .accout ul li:hover {
+        color: red;
+        transition: all 0.1s ease;
+        cursor: pointer;
+    }
+
+    .ti-user:hover .accout {
+        display: block;
+    }
+
+    .nav {
+        list-style: none;
+        display: flex;
+        position: absolute;
+        top: 120px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+
+    .nav li {
+        margin-right: 30px;
+        font-weight: 550;
+        font-size: 18px;
+    }
+
+    .red {
+        color: red;
+    }
+
+    /* type */
+
+    .type {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 144px;
+        height: 128px;
+        line-height: 30px;
+        padding-left: 0;
+        background-color: #fff;
+        list-style: none;
+        position: absolute;
+        top: 25px;
+        display: none;
+        box-shadow: 0 0 3px rgb(0, 0, 0, 0.2);
+    }
+
+    .content li:hover {
+        color: red;
+    }
+
+    .nav>li:nth-child(3)::after {
+        display: block;
+        content: "";
+        height: 6px;
+        width: 150px;
+        background-color: #fff;
+    }
+
+    .type li {
+        height: 32px;
+        font-weight: 700;
+        font-size: 15px;
+        color: black;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .type li span{
+        margin-left: 5px;
+    }
+
+    .nav li:hover .type {
+        display: block;
+    }
+
+    .type>li:hover {
+        color: rgb(248, 48, 48);
+        background-color: #acaaaa;
+    }
+
+    .nav li:nth-child(3):hover .type {
+        display: block;
+    }
+
+    /* type1 */
+
+    .type1 {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 144px;
+        height: 128px;
+        line-height: 30px;
+        padding-left: 0;
+        background-color: #fff;
+        list-style: none;
+        position: absolute;
+        top: 25px;
+        display: none;
+        box-shadow: 0 0 3px rgb(0, 0, 0, 0.2);
+    }
+
+    .content li:hover .type1 {
+        color: red;
+    }
+
+    .nav>li:nth-child(3)::after {
+        display: block;
+        content: "";
+        height: 6px;
+        width: 150px;
+        background-color: #fff;
+    }
+
+    .type1 li span{
+        margin-left: 5px;
+    }
+
+    .type1 li {
+        height: 32px;
+        font-weight: 700;
+        font-size: 15px;
+        color: black;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .nav li:hover .type1 {
+        display: block;
+    }
+
+    .type1>li:hover {
+        color: rgb(248, 48, 48);
+        background-color: #acaaaa;
+    }
+
+    .nav li:nth-child(3):hover .type1 {
+        display: block;
+    }
+
+    /* type2 */
+
+    .type2 {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 144px;
+        height: 128px;
+        line-height: 30px;
+        padding-left: 0;
+        background-color: #fff;
+        list-style: none;
+        position: absolute;
+        top: 25px;
+        display: none;
+        box-shadow: 0 0 3px rgb(0, 0, 0, 0.2);
+    }
+
+    .content li:hover .type2 {
+        color: red;
+    }
+
+    .nav>li:nth-child(3)::after {
+        display: block;
+        content: "";
+        height: 6px;
+        width: 150px;
+        background-color: #fff;
+    }
+
+    .type2 li span{
+        margin-left: 5px;
+    }
+
+    .type2 li {
+        height: 32px;
+        font-weight: 700;
+        font-size: 15px;
+        color: black;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .nav li:hover .type2 {
+        display: block;
+    }
+
+    .type2>li:hover {
+        color: rgb(248, 48, 48);
+        background-color: #acaaaa;
+    }
+
+
+    .nav li:nth-child(3):hover .type2 {
+        display: block;
+    }
+
+    /* ảnh giao diện */
+    .content img {
+        padding-top: 90px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    /* bộ sưu tập mới */
+
+    .collection .new {
+        text-align: center;
+        padding-top: 50px;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: roboto condensed;
+    }
+
+    .sperator {
+        height: 2px;
+        width: 180px;
+        background-color: black;
+        display: flex;
+        margin-left: 43.5%;
+        margin-top: -10px;
+    }
+
+    .collection img {
+        width: 80%;
+        margin-top: -40px;
+        cursor: pointer;
+        /* transform: ; */
+    }
+
+    .collection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subnew {
+        width: 1080px;
+        display: flex;
+        align-items: center;
+    }
+
+    .subnew-item {
+        width: 30%;
+        flex-direction: column;
+        display: flex;
+        height: 320px;
+        margin-left: 30px;
+        font-size: 14px;
+        color: black;
+        cursor: pointer;
+    }
+
+    .subnew-item p {
+        width: 80%;
+    }
+
+    .clothes-price {
+        font-size: 14px;
+        color: #C54934;
+        font-weight: bold;
+        margin-top: -5px;
+    }
+
+    .subnew-item img:hover {
+        transform: scale(0.98);
+        transition: all 0.1s ease;
+        opacity: 0.8;
+    }
+
+    .tag-sale {
+        background-color: #c43127;
+        font-size: 14px;
+        position: absolute;
+        color: #fff;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        align-items: center;
+        display: flex;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+
+    .tag-sale p {
+        width: 100%;
+        height: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 5px;
+    }
+
+    .new img:hover{
+        transform: scale(1);
+        transition: all 0.1s ease;
+        opacity: 0.9;
+    }
+
+    /* Bạn đang quan tâm */
+
+    .care{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        padding-top: 50px;
+        background-color: #F5F5F7;
+    }
+
+    .heading-care{
+        font-size: 24px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .sperator5{
+        height: 2px;
+        width: 200px;
+        background-color: black;
+        display: flex;
+        margin-left: 13%;
+        margin-top: -5px;
+    }
+
+    .care-list{
+        display: flex;
+        align-items: center;
+    }
+
+    .care-list img{
+        height: 250px;
+        width: 250px;
+        padding: 100px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .care-list img:hover{
+        transform: scale(0.98);
+        transition: all 0.1s ease;
+        opacity: 0.8;
+    }
+
+    /* Tìm theo thương hiệu */
+
+    .brand{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .heading-brand{
+        font-size: 24px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .sperator6 {
+        height: 2px;
+        width: 220px;
+        background-color: black;
+        display: flex;
+        margin-left: 0.5%;
+        margin-top: -5px;
+    }
+
+    .brand-list{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 110%;
+        margin-left: 98px;
+        padding-left: 220px;
+    }
+
+    .brand-list img{
+        width: 330px;
+        height: 190px;
+        padding: 90px 30px;
+    }
+
+    .brand-list p{
+        margin-top: -80px;
+        margin-left: 30px;
+        color: #288ad6;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .brand-list img:hover{
+        transform: scale(0.98);
+        transition: all 0.1s ease;
+        opacity: 0.8;
+    }
+
+
+
+    /* trải nghiệm mua sắm */
+
+    .experience{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .sperator2 {
+        height: 2px;
+        width: 330px;
+        background-color: black;
+        display: flex;
+        margin-left: 0.5%;
+        margin-top: -5px;
+    }
+
+    .heading-experience{
+        font-size: 24px;
+        font-weight: 600;
+        cursor: pointer;
+
+    }
+
+    .experience-item img{
+        border-radius: 50%;
+        object-fit: fill;
+        height: 100px;
+        width: 100px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience-item{
+        height: 150px;
+        width: 14%;
+        margin-left: 30px;
+    }
+
+    .experience-list{
+        display: flex;
+        margin-top: 90px;
+        width: calc(100% - 400px);
+        align-items: center;
+    }
+
+    .experience-item img:hover {
+        transform: scale(0.98);
+        transition: all 0.1s ease;
+        opacity: 0.8;
+    }
+
+    /* khách hàng của HTH */
+    
+    .my-client{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+    }
+    
+    .sperator3 {
+        height: 2px;
+        width: 200px;
+        background-color: black;
+        display: flex;
+        margin-left: 0.5%;
+        margin-top: -5px;
+    }
+
+    .heading-client{
+        font-size: 24px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    /* Tin tức giày */
+
+    .news{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F5F5F7;
+        width: 100%;
+    }
+    
+    .sperator4{
+        height: 2px;
+        width: 130px;
+        background-color: black;
+        display: flex;
+        margin-left: 0.3%;
+        margin-top: -10px;
+    }
+    
+    .shoe-news{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        width: calc(100% - 200px);
+        padding-bottom: 100px;
+    }
+
+    .shoe-news-item:first-child{
+        margin-left: 50px;
+    }
+
+    .shoe-news-item img{
+        width: 100%;
+        height: 147px;
+        margin-top: -100px;
+    }
+
+    .shoe-news-item{
+        width: 33.33333%;
+        margin-right: 50px;
+        background-color: #fff;
+    }
+
+    .news-list{
+        display: flex;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .shoe-news-item p{
+        width: 294px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+
+    .shoe-news-item p:nth-child(3){
+        font-size: 13px;
+    }
+
+    .shoe-news-item  img:hover {
+        transform: scale(0.98);
+        transition: all 0.1s ease;
+        opacity: 0.8;
+    }
+
+    /* footer */
+
+    .information{
+        width: calc(100% - 200px);
+        display: flex;
+        align-items: center;
+    }
+
+    .half-information{
+        display: flex;
+        width: 100%;
+    }
+
+    .policy{
+        height: 500px;
+        line-height: 30px;
+        font-size: 13px;
+        width: 100%;
+        margin-left: 130px;
+        padding-right: 20px;
+    }
+
+    .heading-policy{
+        font-size: 18px;
+    }
+
+    .policy-list, .address-list{
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .policy-list li, .address-list li{
+        padding-bottom: 12px;
+        padding-right: 130px;
+        cursor: pointer;
+
+    }
+
+    .policy-list li:hover, .address-list li:hover{
+        color: #c43127;
+    }
+
+    .line-height{
+        line-height: 1.3rem;
+    }
+
+    .address{
+        height: 500px;
+        line-height: 30px;
+        font-size: 13px;
+        width: 100%;
+        margin-right: -10px;
+    }
+
+    .heading-address{
+        font-size: 18px;
+    }
+
+    .IG{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: -90px;
+        padding-left: 40px;
+    }
+
+    .heading-IG{
+        font-size: 18px;
+    }
+
+    .IG-list{
+        width: 100%;
+    }
+
+    .IG-list img{
+        height: 110px;
+        width: 110px;
+    }
